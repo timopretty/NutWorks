@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ {module_contentholder,name="2015 - Template - Head"}
+ {module_contentholder,name="Google Analytics"}
+</head>
+<body class="internal shop logged{module_isloggedin}">
+ {module_contentholder,name="2015 - Template - Scripts Top"}
+ {module_contentholder,name="2015 - Template - Header"}
+ {module_contentholder,name="2015 - Template - Image Strip 01"}
+<section class="main">
+<div class="center-icon">
+	<span class="icon">
+		<span class="fa fa-shopping-cart"></span>
+	</span>
+</div>
+{module_webapps id="special messages" filter="item" itemId="3414302" resultsPerPage="1" hideEmptyMessage="true"}
+<div class="container">
+	<h1>Online Shop</h1>
+	<div class="wrap col-lg-9 col-md-9 col-sm-12 col-xs-12 col-lg-push-3 col-md-push-3">
+		<div class="page-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			 {tag_pagecontent}
+		</div>
+	</div>
+	<div class="sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-pull-9 col-md-pull-9">
+		<a href="/shop" alt="Online Shop" title="Online Shop">
+			<h3>Online Shop</h3>
+		</a>
+		{module_shoppingcartsummary,true,}
+		{module_menu,601385}		
+		<br/>
+		<a class="btn" href="javascript: history.go(-1)" alt="Back" title="Back">Back</a>
+	</div>
+</div>
+</section>
+{module_contentholder,name="2015 - Template - Image Strip 02"}
+{module_contentholder,name="2015 - Template - Health Markers"}
+{module_contentholder,name="2015 - Template - Footer"}
+{module_contentholder,name="2015 - Template - Scripts Bottom"}
+</body>
+</html>

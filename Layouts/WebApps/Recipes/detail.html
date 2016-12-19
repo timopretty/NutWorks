@@ -1,0 +1,73 @@
+<div class="recipes-detail">	
+	<div class="wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="category col-lg-3 col-md-4 col-sm-4 col-xs-12">
+			<div class="img-circle">
+				<img alt="" class="img-responsive" src="/_assets/img/layout/bg-empty-square-500x500.png" />
+				<div class="image">
+					<span class="vertical"><img alt="Product" class="img-responsive" src="{tag_image_value}" /></span>
+				</div>
+			</div>					
+		</div>
+		<div class="wrap col-lg-9 col-md-8 col-sm-8 col-xs-12">
+			<div class="details col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>{tag_name}</h2>
+				<p><strong><em>{tag_summary}</em></strong></p>
+				<ul>
+
+					{% if {{serves}} == empty %}
+					 	{% else %}
+					    <li class="serves"><span>SERVES</span> {tag_serves}</li>
+					{% endif %}
+					{% if {{this.['prep time']}} == empty %}
+					 	{% else %}
+					    <li class="prep"><span>PREP TIME</span> {tag_prep time}</li>
+					{% endif %}
+					
+					{% if {{this.['cook time']}} == empty %}
+					 	{% else %}
+					    <li class="cook"><span>COOK TIME</span> {tag_cook time}</li>
+					{% endif %}
+					
+					{% if {{difficulty}} == empty %}
+					 	{% else %}
+					    <li class="difficulty"><span>DIFFICULTY</span> {tag_difficulty}</li>
+					{% endif %}
+					
+					<!--{% if {{rating}} == empty %}
+					 	{% else %}
+					    <li class="rating"><span>RATING</span> </li>
+					{% endif %}-->
+					
+					
+				</ul>
+			</div>			
+		</div>			
+	</div>
+	<div class="wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="wrap col-lg-5 col-md-12 col-sm-12 col-xs-12">
+			<div class="ingredients col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>Ingredients</h2>
+				{tag_ingredients}
+			</div>
+		</div>
+		<div class="wrap col-lg-7 col-md-12 col-sm-12 col-xs-12">
+			<div class="method col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>Method</h2>
+				{tag_method}
+			</div>
+			
+		</div>	
+	</div>
+	
+	<div class="source col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<strong>Recipe Source:</strong> <a href="{tag_Source (full link with http://)}" alt="Recipe Source" title="Recipe Source" target="_blank">{tag_Source (full link with http://)}</a>
+		<p style="color:#A49E7F;">Recipe ID: {{itemid}}</p>
+	</div>
+	
+	<a class="btn bottom-back" href="javascript: history.go(-1)" alt="Back" title="Back">Back</a><br><br><br>
+	<div class="facebook white-bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<h3>Leave a comment</h3>
+		<div data-width="100%" data-num-posts="2" data-href="{tag_itemurl_withhost}" class="fb-comments">
+		</div>
+	</div>
+</div>

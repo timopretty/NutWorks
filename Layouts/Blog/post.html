@@ -1,0 +1,17 @@
+<div class="blog-post postDetail">
+  <h2>{tag_blogposttitle_nolink}</h2>
+  <div class="post-details">{tag_blogpostdate}</div>
+  <div class="post-body">{tag_blogpostbody}</div>
+
+  
+  <!--Share this page-->
+{module_contentholder,name="Share This Page"}
+  
+  
+     <h2>Post a Comment:</h2>
+     <br/>
+    <!--Facebook Comments Module -->
+	 {module_facebookcomments, url="{tag_itemurl_withhost}", moduleTemplateGroup="Default", locale="en_US", posts="2", width="680", colorScheme="light"}
+ 
+</div>
+<!-- END .blog-post -->

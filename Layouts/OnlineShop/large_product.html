@@ -1,0 +1,79 @@
+<div class="large-product">
+<div class="wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="category col-lg-5 col-md-4 col-sm-4 col-xs-12">
+<div class="img-circle">
+<img alt="" src="/_assets/img/layout/bg-white-square-500x500.png" class="img-responsive" />
+<div class="image">
+<span class="vertical">{tag_largeimage}</span>
+</div>
+</div>
+</div>
+<div class="wrap col-lg-7 col-md-8 col-sm-8 col-xs-12">
+<div class="details col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h2>{tag_name}</h2>
+<h3>{tag_saleprice}</h3>
+<p>{tag_description}</p>
+<p>{tag_grouping}<br />
+<br />
+<strong>QTY:</strong></p>
+{tag_addtocartinputfield} {tag_addtocart}
+</div>
+</div>
+<div class="wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<a title="Back" alt="Back" href="javascript: history.go(-1)" class="btn back-btn">Back</a>
+</div>
+<div class="related-products col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h2>Related Products</h2>
+{tag_relatedproducts}
+<!--{% if relatedProducts.items -%}
+	 
+	
+	
+	 {% for item in relatedProducts.items -%}
+		<div class="small-product col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="row">
+				<div class="category col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="img-circle">
+						<img alt="" class="img-responsive" src="/_assets/img/layout/bg-white-square-500x500.png"/>
+						<div class="image">
+							 {tag_smallimage}
+						</div>
+						<div class="red-hover">
+							<a href="{tag_itemurl_withhost}" alt="{tag_name_nolink}" title="{tag_name_nolink}"><span class="vertical">
+							<h2 class="middle"><span class="fa fa-search-plus"></span></h2>
+							</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="name col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h3 class="name">{tag_name}</h3>
+					<h3 class="price">{tag_saleprice}</h3>
+				</div>
+				<div class="view col-lg-6 col-md-6 col-sm-6 col-xs-6 pad-r-0">
+					<a class="btn btn-block" href="{tag_itemurl_withhost}" alt="View Item" title="View Item">View</a>
+				</div>
+				<div class="buy col-lg-6 col-md-6 col-sm-6 col-xs-6 pad-l-0">
+					 {tag_addtocart}
+				</div>
+			</div>
+		</div>
+	 {% endfor -%} {% endif -%}-->
+</div>
+{% if {{custom1}} == empty %}
+{% else %}
+<div class="related-recipe col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h2>Related Recipes</h2>
+{module_webapps,20719,i,{tag_custom1}}
+</div>
+{% endif %}
+<div class="facebook white-bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h3>Leave a comment</h3>
+<div class="fb-comments" data-href="{tag_itemurl_withhost}" data-num-posts="2" data-width="100%">
+</div>
+</div>
+<!--<div class="related-products wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h3>Related Products</h3>
+			{tag_relatedproducts}
+		</div>-->
+</div>
+</div>

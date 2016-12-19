@@ -1,0 +1,107 @@
+<html dpffagent_readystate="1">
+    <head>
+        <style type="text/css">
+            body { margin: 18px; }
+            body, table { font: 12px/18px "Lucida Grande", Arial, Verdana, sans-serif; }
+            table.border { font: 11px/18px "Lucida Grande", Arial, Verdana, sans-serif; }
+            table.border { border-right: 1px solid #eee; border-bottom: 1px solid #eee; }
+            table.border td { border-top: 1px solid #eee; border-left: 1px solid #eee; }
+            table span { color: #888; }
+        </style>
+    </head>
+    <body>
+        Dear {tag_recipientname}
+        <br />
+        <br />
+        Thank you for ordering from Nutworks, please find your details below. <strong>Your credit card will be charged by our office staff once your order is ready to be despatched and freight charges confirmed</strong>.<br />
+        <br />
+        The Nutworks Team<br />
+        <br />
+        <table width="633" cellspacing="0" cellpadding="6" height="364" class="invoice">
+            <tbody>
+                <tr>
+                    <td><strong>Invoice Date</strong><br />
+                    {tag_invoicedate}
+                    </td>
+                    <td align="right"><strong>Invoice Number</strong><br />
+                    {tag_invoicenumber}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                    {tag_recipientname}<br />
+                    {tag_addressshipping}<br />
+                    {tag_shippinginstructions} <br />
+                    <br />
+                    {tag_phonework} </td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <table width="675" cellspacing="0" cellpadding="6" height="46" class="border">
+                        <tbody>
+                            <tr>
+                                <td style="width: 13%;"><span>Product Code</span></td>
+                                <td style="width: 26%;"><span>Product</span></td>
+                                <td style="width: 7%;"><span>Unit Price</span></td>
+                                <td style="width: 7%;"><span>Quantity</span></td>
+                                <td style="width: 10%;"><span>Total</span></td>
+                            </tr>
+                            <tr class="text">
+                                <td style="width: 10%;"><span style="font-size: 11px;">{tag_productcode}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+                                </span></td>
+                                <td style="width: 36%;">{tag_productname}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+                                </td>
+                                <td style="width: 7%;">{tag_productextaxamount}</td>
+                                <td align="center" style="width: 7%;">{tag_productquantity}</td>
+                                <td align="right" style="width: 10%;">{tag_producttotal}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="6" border="0" class="textb">
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><br />
+                                <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="right"><strong>Shipping Description:</strong> </td>
+                                <td valign="top">
+                                <p style="margin: 0px; font: 12px &quot;lucida grande&quot;;">{tag_shippingdescription}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="width: 90%;"><strong>Shipping Cost:</strong></td>
+                                <td class="text">{tag_shippingtotal}</td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="width: 90%;"><strong>{tag_invoicediscountpercent} Discount: </strong><br />
+                                </td>
+                                <td>{tag_invoicediscountamount}</td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="width: 90%;"><strong>Grand Total:</strong></td>
+                                <td>{tag_invoicetotal}</td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="width: 90%;"><strong>Paid Already:</strong></td>
+                                <td>{tag_amountpaid}</td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="width: 90%;"><strong>Outstanding:</strong></td>
+                                <td>{tag_amountoutstanding}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

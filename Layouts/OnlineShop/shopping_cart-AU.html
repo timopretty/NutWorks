@@ -1,0 +1,97 @@
+<div class="shopping-cart">
+<h2>Shopping Cart</h2>
+<div class="row">
+<div class="wrap col-lg-8 col-md-12 col-sm-12 col-xs-12 shoppingCart">
+<div class="productDetails white-bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="cartHead">
+<div class="cartLabel col-lg-5 col-md-5 col-sm-5 col-xs-4"> Item Details </div>
+<div class="cartLabel col-lg-2 col-md-2 col-sm-2 col-xs-3"> Price </div>
+<div class="cartLabel col-lg-1 col-md-1 col-sm-1 col-xs-1"> Qty </div>
+<div class="cartLabel col-lg-2 col-md-2 col-sm-2 col-xs-3"> Total </div>
+<div class="cartLabel remove col-lg-1 col-md-1 col-sm-1 col-xs-1"> x </div>
+</div>
+<div class="cartBody">
+<div class="cartItem productImage col-lg-1 col-md-1 col-sm-1 hidden-xs"> {tag_productimage} </div>
+<div class="cartItem productTitle col-lg-4 col-md-4 col-sm-4 col-xs-4"> {tag_productname} </div>
+<div class="cartItem productPrice col-lg-2 col-md-2 col-sm-2 col-xs-3"> {tag_productextaxamount} </div>
+<div class="cartItem productQty col-lg-1 col-md-1 col-sm-1 col-xs-1"> {tag_productquantity} </div>
+<!--<div class="cartItem productTax col-lg-1 col-md-1 col-sm-1 col-xs-2"> {tag_producttaxamount} </div>-->
+<div class="cartItem productTotal col-lg-2 col-md-2 col-sm-2 col-xs-3"> {tag_producttotal} </div>
+<div class="cartItem productRemove col-lg-1 col-md-1 col-sm-1 col-xs-1"> {tag_productremovelink} </div>
+</div>
+<div class="shippingOptions">
+<h3>Shipping</h3>
+<p>We recommend that in the hotter months that you purchase a foam box with an ice pack to ensure chocolate products do not melt, <a href="http://www.nutworks.com.au/boxes">please click here</a> to add to your order also read the terms and conditions with this service.<br />
+<br />
+Freight is payable on all orders. If freight comes up as $0, one of our friendly staff will contact you. </p>
+<!--{tag_shippingoptions,true,,Au,}-->
+</div>
+<div class="checkoutActions">
+<div class="row">
+<div class="pull-left continue-shopping col-lg-6 col-md-6 col-sm-5 col-xs-12"> <a href="/shop" class="btn btn-primary btn-continue">Continue shopping</a> </div>
+<div class="pull-right cart-buttons col-lg-6 col-md-6 col-sm-7 col-xs-12 text-right">
+<span class="clear-cart-btn">{tag_clearcartbutton,Clear Cart}</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrap col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="orderDetails">
+<div class="wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="orderTotals white-bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h3>Order Totals</h3>
+<ul>
+    <li>Subtotal: <span>{tag_productsubtotal}</span> </li>
+    <li class="shipping">Shipping &amp; Handling: <span>{tag_shippingtotal}</span>
+    </li>
+    <li>{tag_shippingoptions,true,,Au,}</li>
+    <div class="message"></div>
+    <!--<li class="tax">Tax: <span>{tag_producttaxtotal}</span> </li>-->
+    <li>Discount: <span>-{{invoiceDiscountAmount}}</span> </li>
+    <li class="total"><strong>Total:</strong> <span>{tag_invoicetotal}</span> </li>
+</ul>
+{tag_buybutton,Checkout}
+</div>
+</div>
+<div class="wrap col-lg-12 col-md-6 col-sm-6 col-xs-12">
+<div class="couponCode white-bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h3>Coupon Code</h3>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="row"> {tag_discountcode} </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding-mobile">
+<input type="button" value="Update" onclick="return false;" class="update btn btn-default btn-block" /> </div>
+</div>
+</div>
+<div class="wrap col-lg-12 col-md-6 col-sm-6 col-xs-12">
+<div class="giftCode white-bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h3>Gift Card</h3>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="row"> {tag_giftvoucher} </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding-mobile">
+<input type="button" value="Update" onclick="return false;" class="update btn btn-default btn-block" /> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+    window.alert = function(msg) {
+        var cart_empty        = (msg == 'Your Shopping cart is empty.') ? true : false;
+		var shipping_selected = (msg == 'Shipping option selected successfully.') ? true : false;
+		var shipping_removed  = (msg == 'Shipping option removed successfully.') ? true : false;
+
+        var show_brief = (shipping_selected || shipping_removed) ? false : true;
+        //  console.log(shipping_selected);
+        //  console.log(shipping_removed);
+        //  console.log(show_brief);
+        if (show_brief) {
+            $('.message').text("Please select a shipping option.").show();
+        }
+        return false;
+    }
+</script>

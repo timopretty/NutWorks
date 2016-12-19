@@ -1,0 +1,219 @@
+<div class="booking-container">
+<h1>{tag_name}</h1>
+<p>
+<strong>Date: </strong><span class="date">{tag_date}</span><strong>&nbsp; Remaining Seats: </strong><span class="capacity">{tag_capacityempty}</span> <br />
+<strong><br />
+</strong>
+</p>
+<h2></h2>
+{tag_body}
+<br />
+<br />
+<form action="/FormProcessv2.aspx?WebFormID=10254&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" enctype="multipart/form-data" onsubmit="return checkWholeForm28428(this)" method="post" name="catwebformform28428">
+    <span class="req">*</span>  Required
+    <table cellspacing="0" cellpadding="2" border="0" class="webform">
+        <tbody>
+            <tr>
+                <td><label for="FirstName">First Name <span class="req">*</span></label>
+                <input type="text" maxlength="255" class="cat_textbox" id="FirstName" name="FirstName" /> </td>
+            </tr>
+            <tr>
+                <td><label for="LastName">Last Name <span class="req">*</span></label>
+                <input type="text" maxlength="255" class="cat_textbox" id="LastName" name="LastName" /> </td>
+            </tr>
+            <tr>
+                <td><label for="EmailAddress">Email Address <span class="req">*</span></label>
+                <input type="text" maxlength="255" class="cat_textbox" id="EmailAddress" name="EmailAddress" /> </td>
+            </tr>
+            <tr>
+                <script type="text/javascript">
+function addit(){
+    if(document.getElementById("BookingAllocation").value=="1")
+    {
+        document.getElementById("Amount").value="19.95"
+    }
+    if(document.getElementById("BookingAllocation").value=="2")
+    {
+        document.getElementById("Amount").value="39.90"
+    }
+    if(document.getElementById("BookingAllocation").value=="3")
+    {
+        document.getElementById("Amount").value="59.85"
+    }
+    if(document.getElementById("BookingAllocation").value=="4")
+    {
+        document.getElementById("Amount").value="79.80"
+    }
+    if(document.getElementById("BookingAllocation").value=="5")
+    {
+        document.getElementById("Amount").value="99.75"
+    }
+    if(document.getElementById("BookingAllocation").value=="6")
+    {
+        document.getElementById("Amount").value="119.70"
+    }
+}
+</script>
+                <td>
+                <label>Please select the number of people participating</label>
+                <select class="cat_dropdown" id="BookingAllocation" name="BookingAllocation" onchange="addit()">
+                <option selected="selected" value=" ">-- Please select --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Please complete the participants details below. If you are an adult and would like to participate in the workshop please write your name in below. If there is not enough fields for all of the participants, please list these names in the comments box below.<br />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_93150">Adults Name</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_93150" name="CAT_Custom_93150" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_93146">Childs Name</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_93146" name="CAT_Custom_93146" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_93149">Childs Age</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_93149" name="CAT_Custom_93149" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_93148">Childs Name</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_93148" name="CAT_Custom_93148" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_94391">Childs Age</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_94391" name="CAT_Custom_94391" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_97125">Childs Name</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_97125" name="CAT_Custom_97125" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_97127">Childs Age</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_97127" name="CAT_Custom_97127" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_97126">Childs Name</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_97126" name="CAT_Custom_97126" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_97129">Childs Age</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_97129" name="CAT_Custom_97129" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_97128">Childs Name</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_97128" name="CAT_Custom_97128" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_97130">Childs Age</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_97130" name="CAT_Custom_97130" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_97131">Childs Name</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_97131" name="CAT_Custom_97131" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_97132">Childs Age</label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_97132" name="CAT_Custom_97132" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_93147">Family Contact Phone Number <span class="req">*</span></label>
+                <input type="text" class="cat_textbox" id="CAT_Custom_93147" name="CAT_Custom_93147" maxlength="1024" /></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_94392">How did you hear about the workshop?</label>
+                <select class="cat_dropdown" id="CAT_Custom_94392" name="CAT_Custom_94392">
+                <option value=" ">-- Please select --</option>
+                <option value="Radio">Radio</option>
+                <option value="Kids on the Coast">Kids on the Coast</option>
+                <option value="Email">Email</option>
+                <option value="Other">Other</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_94393">If other, please indicate where</label>
+                <textarea onkeydown="if(this.value.length&gt;=1024)this.value=this.value.substring(0,1023);" class="cat_listbox" rows="4" cols="10" id="CAT_Custom_94393" name="CAT_Custom_94393"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="CAT_Custom_93170">Comments</label>
+                <textarea onkeydown="if(this.value.length&gt;=1024)this.value=this.value.substring(0,1023);" class="cat_listbox" rows="4" cols="10" id="CAT_Custom_93170" name="CAT_Custom_93170"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="CardName">Name on Card <span class="req">*</span></label>
+                <input type="text" class="cat_textbox" id="CardName" name="CardName" /></td>
+            </tr>
+            <tr>
+                <td><label for="CardNumber">Card Number <span class="req">*</span></label>
+                <input type="text" class="cat_textbox" id="CardNumber" name="CardNumber" /></td>
+            </tr>
+            <tr>
+                <td><label>Card Expiry <span class="req">*</span></label>
+                <select class="cat_dropdown_smaller" id="CardExpiryMonth" name="CardExpiryMonth">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                </select><select class="cat_dropdown_smaller" id="CardExpiryYear" name="CardExpiryYear">
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="CardType">Card Type <span class="req">*</span></label>
+                <select class="cat_dropdown" id="CardType" name="CardType">
+                <option value="1">Visa</option>
+                <option value="2">Master Card</option>
+                <option value="4">American Express</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="CardCCV">CCV Number <span class="req">*</span></label>
+                <input type="text" class="cat_textbox" id="CardCCV" name="CardCCV" /></td>
+            </tr>
+            <tr>
+                <td><label for="Amount">Amount <span class="req">*</span></label>
+                <input type="text" maxlength="1024" class="cat_textbox" id="Amount" readonly="readonly" name="Amount" /></td>
+            </tr>
+            <tr>
+                <td><label>Subscribe to: Nutworks Newsletter</label><input type="checkbox" name="CampaignList_23249" checked="checked" /></td>
+            </tr>
+            <tr>
+                <td><label>&nbsp;</label><input type="submit" id="catwebformbutton" value="Submit" class="cat_button" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+    <script type="text/javascript">
+//<![CDATA[
+var submitcount28428 = 0;function checkWholeForm28428(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (!theForm.PaymentMethodType || getRadioSelected(theForm.PaymentMethodType) == 1) { if (theForm.CardName) why += isEmpty(theForm.CardName.value, "Name on Card"); if (theForm.CardNumber) why += isNumeric(theForm.CardNumber.value, "Card Number"); if (theForm.Amount) why += isCurrency(theForm.Amount.value, "Amount"); } if (theForm.CAT_Custom_93147) why += isEmpty(theForm.CAT_Custom_93147.value, "Family Contact Phone Number");if(why != ""){alert(why);return false;}if(submitcount28428 == 0){submitcount28428++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+//]]>
+</script>
+</form>
+<div class="go-back">{module_referreraddress,,Go Back}</div>
+</div>
+<!-- END .booking-container -->
